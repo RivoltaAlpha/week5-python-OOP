@@ -7,7 +7,7 @@ class AnimeCharacter:
         self.home = home
 
     def introduce(self):
-        return f"I am {self.name} from {self.home} and I can {self.power}!"
+        return f"I am {self.name} from {self.home} and I use {self.power}!"
 
     def use_power(self):
         return f"{self.name} uses their power: {self.power}!"
@@ -22,7 +22,7 @@ class SwordNinja(AnimeCharacter):
         self.sword_power = sword_power
 
     def use_power(self):
-        return f"{self.name} takes off and flies at {self.sword_power} mph with {self.power} power!"
+        return f"{self.name} takes off and flies at {self.sword_power} mph using {self.power} power!"
 
 # Another Inherited Class
 class Speed(AnimeCharacter):
